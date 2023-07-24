@@ -11,4 +11,6 @@
 
 ## College Booking (Client Side)
 
-- Code Link:
+- Code Link: https://github.com/shariarmdimtiaz/college-booking-client
+
+- Live Link: https://college-booking-299bb.web.app/
