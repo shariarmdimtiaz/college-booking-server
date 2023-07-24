@@ -1,4 +1,4 @@
-# [Lingua Summer Camp Server](https://summer-camp-server-orcin.vercel.app/)
+# [College Booking Server](https://college-booking-server-azure.vercel.app/)
 
 ## Resource
 
@@ -7,8 +7,8 @@
 
 ## Live Link
 
-https://summer-camp-server-orcin.vercel.app/
+- https://college-booking-server-azure.vercel.app/
 
-## Lingua Summer Camp (Client Side)
+## College Booking (Client Side)
 
-- Code Link: https://github.com/shariarmdimtiaz/lingua-summer-camp
+- Code Link:
