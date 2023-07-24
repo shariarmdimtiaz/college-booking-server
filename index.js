@@ -136,6 +136,16 @@ async function run() {
       res.send(result);
     });
 
+    // get all college info by college name
+    app.get("/college/:search", async (req, res) => {
+      const searchText = req.params.search;
+      // Creating a regex pattern to match any text containing the search string (case-insensitive)
+      const searchPattern = new RegExp(searchText, 'i');
+      const query = { collegeName: searchPattern };
+      const result = await collegeCollection.find(query).toArray();
+      res.send(result);
+    });
+
     // get college by id
     app.get("/collegeDetails/:id", async (req, res) => {
       const id = req.params.id;
@@ -229,7 +239,7 @@ async function run() {
         $set: {
           review: updatedClass.review,
           rating: updatedClass.rating,
-          
+
         },
       };
       const result = await admissionCollection.updateOne(filter, newValues);
